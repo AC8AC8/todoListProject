@@ -21,4 +21,11 @@ public class TodoController {
         todoList.add(todo);
         return todoList;
     }
-}
+
+    @GetMapping("/deleteList")
+    public List<String> deleteList(int todo) {
+        todoList.remove(todo)
+        return todoList;
+    }
+
+} //CLASS
