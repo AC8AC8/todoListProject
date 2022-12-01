@@ -15,4 +15,10 @@ public class TodoController {
     public List<String> list(){
         return todoList;
     }
+
+    @GetMapping("/receiveList")
+    public List<String> receiveList(String todo){
+        todoList.add(todo);
+        return todoList;
+    }
 }
